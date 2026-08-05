@@ -4,7 +4,7 @@
  */
 
 // Instagram profile link (DM Me actions)
-export const INSTAGRAM_PROFILE = "#";
+export const INSTAGRAM_PROFILE = "https://aryanmanna.com";
 
 // LinkedIn profile link
 export const LINKEDIN_PROFILE = "#";
@@ -25,6 +25,6 @@ export const AVAILABILITY = "Available for Selected Contracts / Remote Projects"
 export const WHATSAPP_URL = "tel:9932759884";
 
 // Shared Instagram URL
-export const INSTAGRAM_URL = "#";
+export const INSTAGRAM_URL = "https://aryanmanna.com";
 
 

@@ -5,7 +5,13 @@ import SectionTitle from '../components/SectionTitle/SectionTitle';
 import { useCursor } from '../context/CursorContext';
 import { useVideoPlayback } from '../context/VideoPlaybackContext';
 import { workVideos } from '../data/workVideos';
-import { shortFormVideos, getYoutubeId, type ShortFormVideo } from '../data/shortFormVideos';
+
+// Helper to extract YouTube ID from shorts, standard, or share links
+const getYoutubeId = (url: string): string => {
+  const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=|shorts\/)([^#\&\?]*).*/;
+  const match = url.match(regExp);
+  return (match && match[2].length === 11) ? match[2] : "";
+};
 
 const CATEGORIES = [
   "Normal Talking Head",
@@ -16,79 +22,7 @@ const CATEGORIES = [
   "Sound Design"
 ] as const;
 
-// 1. Play-On-Demand Card Component for Short Form Videos Grid
-interface ShortFormCardProps {
-  video: ShortFormVideo;
-}
-
-const ShortFormCard: React.FC<ShortFormCardProps> = React.memo(({ video }) => {
-  const { setCursorVariant } = useCursor();
-  const { activeVideoId, playVideo } = useVideoPlayback();
-  const isPlaying = activeVideoId === video.id;
-  const videoId = getYoutubeId(video.youtubeUrl);
-  const thumbnailUrl = video.thumbnail || `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
-
-  return (
-    <div
-      className="flex flex-col space-y-3 group/card"
-      onMouseEnter={() => setCursorVariant('play')}
-      onMouseLeave={() => setCursorVariant('default')}
-    >
-      {/* 9:16 Aspect Video Container with rounded-sm matching Hero Carousel */}
-      <div className="relative w-full aspect-[9/16] rounded-sm overflow-hidden bg-neutral-950 border border-white/[0.03] transition-[transform,border-color,box-shadow] duration-500 ease-cinematic-out hover:-translate-y-1.5 hover:scale-[1.02] hover:border-white/10 hover:shadow-cinematic-depth cursor-pointer">
-        {isPlaying ? (
-          <iframe
-            src={`https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1`}
-            title={video.title}
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-            className="w-full h-full object-cover"
-          />
-        ) : (
-          <div
-            onClick={() => playVideo(video.id)}
-            className="relative w-full h-full"
-          >
-            <img
-              src={thumbnailUrl}
-              alt={video.title}
-              className="w-full h-full object-cover select-none pointer-events-none group-hover/card:scale-[1.03] group-hover/card:brightness-[1.05] transition-[transform,filter] duration-700 ease-cinematic-out"
-            />
-            {/* Play Button Overlay */}
-            <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover/card:bg-black/10 transition-colors duration-500">
-              <div className="w-12 h-12 flex items-center justify-center rounded-full bg-neutral-900/90 backdrop-blur-sm border border-white/10 shadow-lg text-platinum group-hover/card:scale-110 group-hover/card:bg-white group-hover/card:text-obsidian transition-all duration-500 ease-cinematic-out">
-                <svg className="w-5 h-5 ml-0.5 fill-current" viewBox="0 0 24 24">
-                  <path d="M8 5v14l11-7z" />
-                </svg>
-              </div>
-            </div>
-
-            {/* Duration Tag */}
-            <div className="absolute bottom-3 right-3 bg-neutral-950/80 px-2 py-0.5 text-[8px] font-mono tracking-wider text-platinum border border-white/[0.05] rounded-sm select-none">
-              {video.duration}
-            </div>
-
-            {/* Cinematic Gradient Vignette */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-black/15 pointer-events-none" />
-          </div>
-        )}
-      </div>
-
-      {/* Details */}
-      <div className="space-y-1">
-        <span className="text-[8px] font-mono tracking-[0.2em] text-neutral-500 uppercase">
-          {video.category}
-        </span>
-        <h4 className="text-sm font-display font-light text-platinum/90 leading-snug">
-          {video.title}
-        </h4>
-      </div>
-    </div>
-  );
-});
-
-// 2. Main Tabbed Work Exhibition Component
+// Main Tabbed Work Exhibition Component
 export const VideoPortfolio: React.FC = () => {
   const { setCursorVariant } = useCursor();
   const { activeVideoId, playVideo, pauseVideo } = useVideoPlayback();
@@ -153,7 +87,7 @@ export const VideoPortfolio: React.FC = () => {
         </div>
 
         {/* Main Video Display Player */}
-        <div className="w-full max-w-4xl mx-auto aspect-video rounded-sm overflow-hidden bg-neutral-950 border border-white/[0.03] shadow-cinematic-depth relative group/player mb-24">
+        <div className="w-full max-w-4xl mx-auto aspect-video rounded-sm overflow-hidden bg-neutral-950 border border-white/[0.03] shadow-cinematic-depth relative group/player">
           {isMainVideoPlaying && activeYoutubeId ? (
             <iframe
               src={`https://www.youtube.com/embed/${activeYoutubeId}?autoplay=1&rel=0&modestbranding=1`}
@@ -224,23 +158,6 @@ export const VideoPortfolio: React.FC = () => {
               <div className="absolute inset-0 border border-white/[0.04] pointer-events-none rounded-sm" />
             </div>
           )}
-        </div>
-
-        {/* Short Form Videos Subsection Grid */}
-        <SectionTitle
-          eyebrow="02 // SHORT FORM"
-          title="Short Form Videos"
-          subtitle="High-impact edits crafted for social media, brands and creators."
-          className="mb-12 md:mb-16 mt-32 md:mt-48"
-        />
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
-          {shortFormVideos.map((video) => (
-            <ShortFormCard
-              key={video.id}
-              video={video}
-            />
-          ))}
         </div>
       </Container>
     </section>

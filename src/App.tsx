@@ -12,7 +12,6 @@ import Navbar from './components/Navbar/Navbar';
 import Hero from './sections/Hero';
 import About from './sections/About';
 import VideoPortfolio from './sections/VideoPortfolio';
-import MotionGraphics from './sections/MotionGraphics';
 import DesignShowcase from './sections/DesignShowcase';
 import Process from './sections/Process';
 import Contact from './sections/Contact';
@@ -54,7 +53,6 @@ function App() {
               <main>
                 <Hero />
                 <VideoPortfolio />
-                <MotionGraphics />
                 <DesignShowcase />
                 <Process />
                 <About />

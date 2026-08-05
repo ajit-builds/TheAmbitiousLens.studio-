@@ -14,7 +14,6 @@ interface NavItem {
 const NAV_ITEMS: NavItem[] = [
   { label: 'Home', href: '#hero' },
   { label: 'Work', href: '#video-portfolio' },
-  { label: 'Motion', href: '#motion-graphics' },
   { label: 'Design', href: '#design-showcase' },
   { label: 'Process', href: '#process' },
   { label: 'About', href: '#about' },

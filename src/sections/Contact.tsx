@@ -138,7 +138,7 @@ export const Contact: React.FC = () => {
                   transition={linkTransition}
                   className="group relative inline-block text-sm sm:text-base text-neutral-300 cursor-pointer font-light self-start"
                 >
-                  <span>@theambitiouslens</span>
+                  <span>@aryanmanna</span>
                   <span className="absolute bottom-0 left-0 w-full h-[1px] bg-neutral-200 origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out" />
                 </motion.a>
               </motion.div>
