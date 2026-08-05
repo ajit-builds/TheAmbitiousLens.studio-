@@ -12,7 +12,7 @@ export const WorkedWith: React.FC = () => {
   return (
     <section
       id="worked-with"
-      className="bg-obsidian pt-20 pb-24 md:pt-28 md:pb-36 overflow-hidden"
+      className="bg-obsidian pt-12 pb-14 md:pt-16 md:pb-20 overflow-hidden"
       aria-label="Brands Worked With"
     >
       <Container>
@@ -22,17 +22,17 @@ export const WorkedWith: React.FC = () => {
           title="Worked With"
           subtitle="Collaborating with brands and creative teams to bring ideas to life."
           align="left"
-          className="mb-16 md:mb-20"
+          className="mb-8 md:mb-10"
         />
       </Container>
 
       {/* Marquee Full Width Container */}
       <div 
-        className="w-full relative overflow-hidden py-8 md:py-12 [mask-image:linear-gradient(to_right,transparent,black_5%,black_95%,transparent)]"
+        className="w-full relative overflow-hidden py-4 md:py-6 [mask-image:linear-gradient(to_right,transparent,black_5%,black_95%,transparent)]"
         onMouseEnter={() => setCursorVariant('hover')}
         onMouseLeave={() => setCursorVariant('default')}
       >
-        <div className="animate-marquee flex items-center gap-16 sm:gap-24 md:gap-32 lg:gap-40 pr-16 sm:pr-24 md:pr-32 lg:pr-40">
+        <div className="animate-marquee flex items-center gap-8 sm:gap-12 md:gap-16 lg:gap-20 pr-8 sm:pr-12 md:pr-16 lg:pr-20">
           {marqueeLogos.map((logo, index) => (
             <div
               key={`${logo.id}-${index}`}
@@ -41,7 +41,7 @@ export const WorkedWith: React.FC = () => {
               <img
                 src={logo.src}
                 alt={logo.name}
-                className="h-14 sm:h-18 md:h-24 lg:h-28 max-w-[200px] sm:max-w-[280px] md:max-w-[340px] w-auto object-contain brightness-100 opacity-80 hover:opacity-100 transition-opacity duration-300 select-none pointer-events-none"
+                className="h-20 sm:h-28 md:h-36 lg:h-40 max-w-[300px] sm:max-w-[400px] md:max-w-[500px] w-auto object-contain brightness-100 opacity-85 hover:opacity-100 transition-opacity duration-300 select-none pointer-events-none"
               />
             </div>
           ))}
