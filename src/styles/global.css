@@ -268,7 +268,7 @@
   display: flex;
   width: max-content;
   will-change: transform;
-  animation: marquee-scroll 38s linear infinite;
+  animation: marquee-scroll 31s linear infinite;
   backface-visibility: hidden;
   perspective: 1000px;
 }
