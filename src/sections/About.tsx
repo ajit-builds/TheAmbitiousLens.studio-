@@ -48,7 +48,7 @@ export const About: React.FC = () => {
         {/* Editorial Section Header */}
         <SectionTitle
           eyebrow="06 // ABOUT ME"
-          title="Behind The Lens"
+          title="About Me"
           subtitle="Meet the creative mind behind every frame, motion and story."
           className="mb-20 md:mb-24"
         />
@@ -189,17 +189,20 @@ export const About: React.FC = () => {
                 Who I Am
               </span>
               <h3 className="text-xl sm:text-2xl font-light tracking-wide text-neutral-200">
-                AKA Aryan Manna
+                Aryan Manna
               </h3>
               <div className="text-sm sm:text-base text-neutral-400 font-light leading-relaxed space-y-4 max-w-xl">
                 <p>
-                  Hi, I'm Aryan Manna.
+                  I started my journey as a video editor three years ago, driven by a passion for storytelling and visual design. Since then, I've had the opportunity to work with leading brands and top creative agencies, contributing to projects across advertising, social media, and digital campaigns.
                 </p>
                 <p>
-                  A Video Editor, Creative Director and Filmmaker passionate about transforming ideas into cinematic visual experiences.
+                  Today, I work beyond editing. As a Creative Director, I lead projects from concept to final delivery—developing creative ideas, directing visual storytelling, managing teams, collaborating with clients, and ensuring every piece of content delivers both impact and purpose.
                 </p>
                 <p>
-                  I believe editing is not simply arranging clips. It is rhythm. Emotion. Timing. Storytelling. Every frame should communicate something.
+                  Alongside my professional work, I'm pursuing a B.Sc. in VFX, Animation, and Graphics, constantly expanding my understanding of visual effects, filmmaking, motion design, and cinematic storytelling. I believe great content isn't just about making something look good—it's about creating work that connects with people and leaves a lasting impression.
+                </p>
+                <p>
+                  Whether I'm editing, directing, or building creative systems, my focus remains the same: turning ideas into visuals that people remember.
                 </p>
               </div>
             </motion.div>
@@ -258,17 +261,6 @@ export const About: React.FC = () => {
                   </motion.span>
                 ))}
               </motion.div>
-            </motion.div>
-
-            {/* Section 4: CURRENTLY */}
-            <motion.div variants={staggerItem} className="pt-2 border-t border-white/[0.04] w-full max-w-xl">
-              <div className="flex items-start gap-3">
-                <div className="w-1.5 h-1.5 rounded-full bg-neutral-700 mt-2 flex-shrink-0" />
-                <p className="text-xs text-neutral-500 font-light leading-relaxed">
-                  <span className="text-neutral-400 font-mono tracking-wide uppercase text-[10px] block mb-0.5">Currently</span>
-                  B.Tech Computer Science Engineering Student // Learning AI, Creative Technology & Storytelling. Building the intersection between technology and creativity.
-                </p>
-              </div>
             </motion.div>
 
           </motion.div>

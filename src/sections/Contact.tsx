@@ -2,10 +2,11 @@ import React from 'react';
 import { motion } from 'motion/react';
 import type { Variants } from 'motion/react';
 import Container from '../components/Container/Container';
-import { EMAIL, LOCATION, INSTAGRAM_URL, LINKEDIN_PROFILE, YOUTUBE_VIDEOS } from '../data/config';
+import { EMAIL, LOCATION, INSTAGRAM_URL } from '../data/config';
 
 export const Contact: React.FC = () => {
   const GMAIL_URL = "mailto:aryanmanna029@gmail.com";
+  const WHATSAPP_URL = "https://wa.me/919932759884";
 
   // Motion variants for container and stagger items
   const containerVariants: Variants = {
@@ -143,22 +144,6 @@ export const Contact: React.FC = () => {
                 </motion.a>
               </motion.div>
 
-              {/* LINKEDIN */}
-              <motion.div variants={infoBlockItem} className="flex flex-col space-y-2">
-                <span className="font-mono text-[9px] text-neutral-500 uppercase tracking-widest">LINKEDIN</span>
-                <motion.a 
-                  href={LINKEDIN_PROFILE} 
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  whileHover={linkHover}
-                  transition={linkTransition}
-                  className="group relative inline-block text-sm sm:text-base text-neutral-300 cursor-pointer font-light self-start"
-                >
-                  <span>Aryan Manna</span>
-                  <span className="absolute bottom-0 left-0 w-full h-[1px] bg-neutral-200 origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out" />
-                </motion.a>
-              </motion.div>
-
               {/* LOCATION */}
               <motion.div variants={infoBlockItem} className="flex flex-col space-y-2">
                 <span className="font-mono text-[9px] text-neutral-500 uppercase tracking-widest">LOCATION</span>
@@ -175,24 +160,8 @@ export const Contact: React.FC = () => {
                 </motion.a>
               </motion.div>
 
-              {/* YOUTUBE */}
-              <motion.div variants={infoBlockItem} className="flex flex-col space-y-2">
-                <span className="font-mono text-[9px] text-neutral-500 uppercase tracking-widest">YOUTUBE</span>
-                <motion.a 
-                  href={YOUTUBE_VIDEOS} 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  whileHover={linkHover}
-                  transition={linkTransition}
-                  className="group relative inline-block text-sm sm:text-base text-neutral-300 cursor-pointer font-light self-start"
-                >
-                  <span>Aryan Manna</span>
-                  <span className="absolute bottom-0 left-0 w-full h-[1px] bg-neutral-200 origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out" />
-                </motion.a>
-              </motion.div>
-
               {/* AVAILABILITY */}
-              <motion.div variants={infoBlockItem} className="flex flex-col space-y-2 col-span-2">
+              <motion.div variants={infoBlockItem} className="flex flex-col space-y-2">
                 <span className="font-mono text-[9px] text-neutral-500 uppercase tracking-widest">AVAILABILITY</span>
                 <motion.a 
                   href={GMAIL_URL}
@@ -202,7 +171,7 @@ export const Contact: React.FC = () => {
                   transition={linkTransition}
                   className="group relative inline-block text-sm sm:text-base text-neutral-300 cursor-pointer font-light self-start text-left outline-none"
                 >
-                  <span>Freelance • Remote • Worldwide</span>
+                  <span>Freelance • Remote</span>
                   <span className="absolute bottom-0 left-0 w-full h-[1px] bg-neutral-200 origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out" />
                 </motion.a>
               </motion.div>
@@ -235,9 +204,9 @@ export const Contact: React.FC = () => {
             </div>
 
             <div className="flex flex-col space-y-4">
-              {/* PRIMARY BUTTON: Instagram */}
+              {/* PRIMARY BUTTON: WhatsApp */}
               <motion.a
-                href={INSTAGRAM_URL}
+                href={WHATSAPP_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ 
@@ -255,7 +224,7 @@ export const Contact: React.FC = () => {
                 }}
                 className="w-full inline-flex items-center justify-center font-mono tracking-widest text-[10px] sm:text-xs uppercase font-medium bg-platinum text-obsidian border border-platinum hover:bg-neutral-900 hover:text-platinum hover:border-neutral-800 h-12 px-8 rounded-sm cursor-pointer select-none transition-all duration-300 outline-none"
               >
-                Chat on Instagram
+                Chat with Me
               </motion.a>
 
               {/* SECONDARY BUTTON: Email */}

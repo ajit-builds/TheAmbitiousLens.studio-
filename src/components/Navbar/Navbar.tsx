@@ -4,7 +4,6 @@ import { useLenis } from 'lenis/react';
 import { useCursor } from '../../context/CursorContext';
 import { Container } from '../Container/Container';
 import { Button } from '../Button/Button';
-import { INSTAGRAM_URL } from '../../data/config';
 
 interface NavItem {
   label: string;
@@ -156,18 +155,8 @@ export const Navbar: React.FC = () => {
               })}
             </nav>
 
-            {/* Let's Talk & DM Me CTA buttons (Desktop) */}
+            {/* Let's Talk CTA button (Desktop) */}
             <div className="hidden md:flex items-center gap-3">
-              <a
-                href={INSTAGRAM_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                onMouseEnter={() => setCursorVariant('hover')}
-                onMouseLeave={() => setCursorVariant('default')}
-                className="inline-flex items-center justify-center font-mono tracking-widest text-[9px] uppercase font-medium bg-platinum text-obsidian border border-platinum hover:bg-neutral-900 hover:text-white hover:border-neutral-700 h-9 px-4 rounded-sm active:scale-[0.98] transition-all duration-300 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-neutral-400"
-              >
-                DM Me
-              </a>
               <Button
                 variant="outline"
                 size="sm"
@@ -241,14 +230,6 @@ export const Navbar: React.FC = () => {
                 transition={{ delay: 0.1 + NAV_ITEMS.length * 0.05, duration: 0.5 }}
                 className="mt-4 flex flex-col gap-3 w-full max-w-[200px]"
               >
-                <a
-                  href={INSTAGRAM_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full inline-flex items-center justify-center font-mono text-xs tracking-widest uppercase py-3 font-medium bg-platinum text-obsidian border border-platinum hover:bg-neutral-900 hover:text-white rounded-sm text-center transition-all duration-300"
-                >
-                  DM Me
-                </a>
                 <Button
                   variant="outline"
                   onClick={handleCtaClick}
