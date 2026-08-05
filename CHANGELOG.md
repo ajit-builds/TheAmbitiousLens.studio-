@@ -8,7 +8,7 @@ All notable changes to this project will be documented in this file.
 
 ### 🚀 Initial Public Release
 
-This marks the first official public release of **The Ambitious Lens** portfolio website.
+This marks the first official public release of **Aryan Manna** portfolio website.
 
 ### ✨ Features
 

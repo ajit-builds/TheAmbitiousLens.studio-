@@ -1,4 +1,4 @@
-# The Ambitious Lens — Portfolio Bible
+# Aryan Manna — Portfolio Bible
 
 ## Table of Contents
 1. [Project Overview & Vision](#1-project-overview--vision)
@@ -29,7 +29,7 @@
 
 ## 1. Project Overview & Vision
 
-**The Ambitious Lens** is the high-end creative portfolio of **Yuvraj Singh (uvRaj)**, a director, video editor, and motion designer. The portfolio serves to showcase brand films, short-form editing, motion graphics, and typography designs.
+**Aryan Manna** is the high-end creative portfolio of **Aryan Manna**, a director, video editor, and creative director. The portfolio serves to showcase brand films, short-form editing, motion graphics, and typography designs.
 
 The core vision is to elevate the digital resume into a premium cinematic closing credit sequence. Instead of typical website layouts, the interface operates as a unified canvas that seamlessly flows between storytelling projects, interactive vector animations, and viewfinder mockups. 
 
@@ -105,7 +105,7 @@ VIDEO_PORTFOLIO/
 ### Hero
 *   **Path:** `src/sections/Hero.tsx`
 *   **Logic:** Contains a split structure. Left column has a desaturated primary title, and right column features a spring-loaded vertical scrolling slideshow (`src/components/HeroCarousel`).
-*   **Key Detail:** Logo casing is preserved as `"The Ambitious Lens by uvRaj"` in desaturated fonts.
+*   **Key Detail:** Logo casing is preserved as `"Aryan Manna"` in desaturated fonts.
 
 ### My Works (Portfolio)
 *   **Path:** `src/sections/VideoPortfolio.tsx`
@@ -134,7 +134,7 @@ VIDEO_PORTFOLIO/
 
 ### About (Behind the Lens)
 *   **Path:** `src/sections/About.tsx`
-*   **Logic:** Left column features a camera viewfinder HUD overlay showing Yuvraj's portrait, a pulsing REC icon, standby metadata, and running timecode. Right column features biographical copy, primary disciplines, and complementary skill chips.
+*   **Logic:** Left column features a camera viewfinder HUD overlay showing Aryan Manna's portrait, a pulsing REC icon, standby metadata, and running timecode. Right column features biographical copy, primary disciplines, and complementary skill chips.
 
 ### Contact
 *   **Path:** `src/sections/Contact.tsx`
@@ -144,7 +144,7 @@ VIDEO_PORTFOLIO/
 ### Footer
 *   **Path:** `src/sections/Footer.tsx`
 *   **Logic:** A transparent container displaying credits:
-    *   **Left:** "The Ambitious Lens", "Designed • Directed • Developed by uvRaj" (with uvRaj highlighted), and copyright details.
+    *   **Left:** "Aryan Manna", "Designed • Directed • Developed" and copyright details.
     *   **Right:** Right-aligned copyright with low opacity.
 
 ---

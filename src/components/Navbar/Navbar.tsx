@@ -126,10 +126,7 @@ export const Navbar: React.FC = () => {
               className="flex flex-col select-none focus-visible:outline-none"
             >
               <span className="font-display font-light text-sm sm:text-base tracking-[0.2em] text-white">
-                The Ambitious Lens
-              </span>
-              <span className="font-mono text-[9px] text-neutral-500 tracking-widest leading-none mt-0.5">
-                by uvRaj
+                Aryan Manna
               </span>
             </a>
 

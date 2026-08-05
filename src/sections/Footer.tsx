@@ -19,17 +19,17 @@ export const Footer: React.FC = () => {
           {/* Left Side */}
           <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
             <span className="text-sm font-medium text-[#F2F2F2] font-mono tracking-wider">
-              The Ambitious Lens
+              Aryan Manna
             </span>
             <span className="text-xs text-white/65 font-light mt-1.5">
-              Designed • Directed • Developed by <span className="text-[#F2F2F2] font-medium">uvRaj</span>
+              Designed • Directed • Developed
             </span>
           </div>
 
           {/* Right Side */}
           <div className="flex flex-col items-center sm:items-end text-center sm:text-right gap-1 pointer-events-none select-none">
             <span className="text-xs text-white/45 font-light">
-              © 2026 Yuvraj Singh. All Rights Reserved.
+              © 2026 Aryan Manna. All Rights Reserved.
             </span>
             <span className="text-[9px] text-white/[0.04] font-sans font-light mt-0.5 tracking-wider select-none">
               ॥ श्री गणेशाय नमः ॥

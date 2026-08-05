@@ -3,13 +3,12 @@ import Container from '../components/Container/Container';
 import Button from '../components/Button/Button';
 import HeroCarousel from '../components/HeroCarousel/HeroCarousel';
 import { useCursor } from '../context/CursorContext';
-import { INSTAGRAM_URL } from '../data/config';
 
 export const Hero: React.FC = () => {
   const { setCursorVariant } = useCursor();
 
   const handleCtaClick = () => {
-    const el = document.querySelector('#video-portfolio');
+    const el = document.querySelector('#contact');
     if (el) el.scrollIntoView({ behavior: 'smooth' });
   };
 
@@ -37,24 +36,9 @@ export const Hero: React.FC = () => {
               animate={{ y: 0, filter: 'blur(0px)', opacity: 1 }}
               transition={{ delay: 0.5, duration: 1.4, ease: easeCurve }}
             >
-              YUVRAJ SINGH
+              ARYAN MANNA
             </motion.h1>
           </div>
-
-          {/* Sub-Branding */}
-          <motion.div
-            className="flex flex-col items-center mt-2"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.8, duration: 1.2, ease: easeCurve }}
-          >
-            <h2 className="text-sm sm:text-base md:text-lg font-display font-light tracking-[0.25em] text-platinum/90">
-              The Ambitious Lens
-            </h2>
-            <span className="font-mono text-[9px] sm:text-[10px] text-neutral-500 tracking-[0.25em] leading-none mt-1.5">
-              by uvRaj
-            </span>
-          </motion.div>
 
           {/* Core Roles Title */}
           <motion.h3
@@ -63,7 +47,7 @@ export const Hero: React.FC = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 1.1, duration: 1.0, ease: easeCurve }}
           >
-            Video Editor & Motion Graphics Designer
+            Video Editor & Creative Director
           </motion.h3>
 
           {/* Supporting Tagline */}
@@ -102,19 +86,8 @@ export const Hero: React.FC = () => {
               onMouseLeave={() => setCursorVariant('default')}
               className="w-full sm:w-auto font-mono tracking-widest text-[10px] uppercase font-medium bg-platinum text-obsidian border border-platinum hover:bg-neutral-900 hover:text-white hover:border-neutral-700 h-11 px-8 rounded-sm active:scale-[0.98] transition-all duration-300"
             >
-              Explore Work
+              Let's Talk
             </Button>
-            
-            <a
-              href={INSTAGRAM_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              onMouseEnter={() => setCursorVariant('hover')}
-              onMouseLeave={() => setCursorVariant('default')}
-              className="w-full sm:w-auto inline-flex items-center justify-center font-mono tracking-widest text-[10px] uppercase font-medium border border-neutral-700 bg-neutral-950/40 text-neutral-300 hover:border-neutral-400 hover:text-white h-11 px-8 rounded-sm active:scale-[0.98] transition-all duration-300"
-            >
-              DM Me
-            </a>
           </div>
           
           <span 

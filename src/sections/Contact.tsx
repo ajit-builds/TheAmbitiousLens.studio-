@@ -5,7 +5,7 @@ import Container from '../components/Container/Container';
 import { EMAIL, LOCATION, INSTAGRAM_URL, LINKEDIN_PROFILE, YOUTUBE_VIDEOS } from '../data/config';
 
 export const Contact: React.FC = () => {
-  const GMAIL_URL = "https://mail.google.com/mail/?view=cm&fs=1&to=theambitiouslens@gmail.com&su=New%20Project%20Inquiry&body=Hi%20Yuvraj,%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20love%20to%20discuss%20a%20project.";
+  const GMAIL_URL = "mailto:aryanmanna029@gmail.com";
 
   // Motion variants for container and stagger items
   const containerVariants: Variants = {
@@ -154,7 +154,7 @@ export const Contact: React.FC = () => {
                   transition={linkTransition}
                   className="group relative inline-block text-sm sm:text-base text-neutral-300 cursor-pointer font-light self-start"
                 >
-                  <span>Yuvraj Singh</span>
+                  <span>Aryan Manna</span>
                   <span className="absolute bottom-0 left-0 w-full h-[1px] bg-neutral-200 origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out" />
                 </motion.a>
               </motion.div>
@@ -186,7 +186,7 @@ export const Contact: React.FC = () => {
                   transition={linkTransition}
                   className="group relative inline-block text-sm sm:text-base text-neutral-300 cursor-pointer font-light self-start"
                 >
-                  <span>The Ambitious Lens</span>
+                  <span>Aryan Manna</span>
                   <span className="absolute bottom-0 left-0 w-full h-[1px] bg-neutral-200 origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out" />
                 </motion.a>
               </motion.div>

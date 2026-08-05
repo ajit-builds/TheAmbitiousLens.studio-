@@ -1,4 +1,4 @@
-# Brand Guidelines — The Ambitious Lens
+# Brand Guidelines — Aryan Manna
 
 ## Table of Contents
 1. [Visual Brand Philosophy](#1-visual-brand-philosophy)
@@ -15,7 +15,7 @@
 
 ## 1. Visual Brand Philosophy
 
-**The Ambitious Lens** brand identity is built around the concept of a **cinematic editorial catalog**. It rejects typical website colors, templates, and flashy visual triggers. 
+**Aryan Manna** brand identity is built around the concept of a **cinematic editorial catalog**. It rejects typical website colors, templates, and flashy visual triggers. 
 
 The primary design principle is **extreme restraint**:
 *   **Monochromatic Primaries:** Relies on off-black, graphite, and desaturated white tones.

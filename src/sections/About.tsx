@@ -93,7 +93,7 @@ export const About: React.FC = () => {
               <div className="w-full h-full overflow-hidden rounded-sm relative">
                 <motion.img
                   src="/images/yuvraj_portrait.png"
-                  alt="Yuvraj Singh Portrait"
+                  alt="Aryan Manna Portrait"
                   className="w-full h-full object-cover pointer-events-none select-none transition-transform duration-700 ease-[0.22,1,0.36,1] group-hover:scale-[1.04]"
                   initial={{ scale: 1.06 }}
                   whileInView={{ scale: 1.01 }}
@@ -114,7 +114,7 @@ export const About: React.FC = () => {
               className="w-[1px] h-8 bg-white origin-top"
             />
 
-            {/* Section 5: THE AMBITIOUS LENS (Mysterious Easter Egg Card) */}
+            {/* Section 5: ARYAN MANNA (Mysterious Easter Egg Card) */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -133,7 +133,7 @@ export const About: React.FC = () => {
               >
                 {/* Background Watermark */}
                 <div className="absolute inset-0 flex items-center justify-center font-display text-9xl font-black text-white/[0.03] select-none pointer-events-none tracking-widest">
-                  TAL
+                  AM
                 </div>
 
                 {/* Ambient glow decoration */}
@@ -142,7 +142,7 @@ export const About: React.FC = () => {
                 {/* Header row with Title and tiny pulsing status dot */}
                 <div className="flex justify-between items-center mb-3 relative z-10">
                   <h4 className="text-xs sm:text-sm font-display tracking-widest text-neutral-200 uppercase">
-                    The Ambitious Lens
+                    Aryan Manna
                   </h4>
                   <span className="relative flex h-2 w-2">
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-500/60 opacity-75"></span>
@@ -189,14 +189,14 @@ export const About: React.FC = () => {
                 Who I Am
               </span>
               <h3 className="text-xl sm:text-2xl font-light tracking-wide text-neutral-200">
-                AKA uvRaj (uv)
+                AKA Aryan Manna
               </h3>
               <div className="text-sm sm:text-base text-neutral-400 font-light leading-relaxed space-y-4 max-w-xl">
                 <p>
-                  Hi, I'm Yuvraj.
+                  Hi, I'm Aryan Manna.
                 </p>
                 <p>
-                  A Video Editor, Motion Graphics Designer and Filmmaker passionate about transforming ideas into cinematic visual experiences.
+                  A Video Editor, Creative Director and Filmmaker passionate about transforming ideas into cinematic visual experiences.
                 </p>
                 <p>
                   I believe editing is not simply arranging clips. It is rhythm. Emotion. Timing. Storytelling. Every frame should communicate something.

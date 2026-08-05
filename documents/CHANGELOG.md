@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to **The Ambitious Lens** portfolio project will be documented in this file.
+All notable changes to **Aryan Manna** portfolio project will be documented in this file.
 
 ---
 

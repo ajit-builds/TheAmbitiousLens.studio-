@@ -4,7 +4,7 @@ export interface HeroVideo {
 }
 
 /**
- * Data source for Yuvraj Singh's Hero Cinematic Marquee.
+ * Data source for Aryan Manna's Hero Cinematic Marquee.
  * Automatically loops through these paths.
  * Dropping local files into /public/videos/hero/ matches these paths.
  */

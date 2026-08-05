@@ -34,7 +34,7 @@ export const Loader: React.FC<LoaderProps> = ({ onComplete }) => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
             >
-              The Ambitious Lens
+              Aryan Manna
             </motion.h1>
             
             {/* Cinematic divider animation */}
@@ -44,15 +44,6 @@ export const Loader: React.FC<LoaderProps> = ({ onComplete }) => {
               animate={{ width: 60 }}
               transition={{ delay: 0.3, duration: 1.0, ease: [0.16, 1, 0.3, 1] }}
             />
-
-            <motion.p
-              className="text-[10px] font-mono tracking-[0.25em] text-neutral-500 select-none"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.5, duration: 0.8 }}
-            >
-              by uvRaj
-            </motion.p>
           </div>
         </motion.div>
       )}

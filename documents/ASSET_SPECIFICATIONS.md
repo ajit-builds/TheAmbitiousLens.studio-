@@ -1,4 +1,4 @@
-# Asset Specifications — The Ambitious Lens
+# Asset Specifications — Aryan Manna
 
 ## Table of Contents
 1. [Asset Matrix Blueprint](#1-asset-matrix-blueprint)

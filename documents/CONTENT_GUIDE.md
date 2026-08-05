@@ -1,4 +1,4 @@
-# Content Update Guide — The Ambitious Lens
+# Content Update Guide — Aryan Manna
 
 ## Table of Contents
 1. [Introduction](#1-introduction)
@@ -18,7 +18,7 @@
 
 ## 1. Introduction
 
-This guide provides step-by-step instructions for updating content on the **The Ambitious Lens** portfolio. It is designed to help anyone update text, swap videos, or change images without breaking the code or layout.
+This guide provides step-by-step instructions for updating content on the **Aryan Manna** portfolio. It is designed to help anyone update text, swap videos, or change images without breaking the code or layout.
 
 Before making changes, ensure you have:
 *   A code editor installed (e.g., VS Code).
@@ -170,7 +170,7 @@ To update your contact details globally across the website:
 1. Open `src/data/config.ts`.
 2. Modify the variables:
    ```typescript
-   export const EMAIL = "theambitiouslens@gmail.com";
+   export const EMAIL = "aryanmanna029@gmail.com";
    export const INSTAGRAM_PROFILE = "https://instagram.com/...";
    export const LINKEDIN_PROFILE = "https://linkedin.com/...";
    export const YOUTUBE_VIDEOS = "https://youtube.com/...";
@@ -189,7 +189,7 @@ To update your contact details globally across the website:
 2. Locate the copyright text node in the bottom row.
 3. Edit the year string:
    ```tsx
-   <span>© 2026 Yuvraj Singh. All Rights Reserved.</span>
+   <span>© 2026 Aryan Manna. All Rights Reserved.</span>
    ```
 
 ---
