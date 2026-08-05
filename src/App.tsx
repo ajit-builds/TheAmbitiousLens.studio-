@@ -12,7 +12,7 @@ import Navbar from './components/Navbar/Navbar';
 import Hero from './sections/Hero';
 import About from './sections/About';
 import VideoPortfolio from './sections/VideoPortfolio';
-import DesignShowcase from './sections/DesignShowcase';
+import WorkedWith from './sections/WorkedWith';
 import Process from './sections/Process';
 import Contact from './sections/Contact';
 import Footer from './sections/Footer';
@@ -53,7 +53,7 @@ function App() {
               <main>
                 <Hero />
                 <VideoPortfolio />
-                <DesignShowcase />
+                <WorkedWith />
                 <Process />
                 <About />
                 <Contact />

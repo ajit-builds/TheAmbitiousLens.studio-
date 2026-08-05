@@ -207,50 +207,25 @@ export const About: React.FC = () => {
               </div>
             </motion.div>
 
-            {/* Section 2: PRIMARY DISCIPLINES */}
+            {/* Section 2: SKILLS */}
             <motion.div variants={staggerItem} className="flex flex-col space-y-4 w-full">
               <span className="text-[10px] font-medium font-mono tracking-[0.3em] text-[#D4D4D4] uppercase">
-                Primary Disciplines
+                Skills
               </span>
               <motion.div variants={pillContainer} className="flex flex-wrap gap-2 max-w-xl">
                 {[
-                  "Video Editing",
-                  "Motion Graphics",
-                  "Visual Effects",
-                  "Graphic Design",
-                  "Color Grading",
-                  "Creative Storytelling",
-                  "Filmmaking",
-                  "YouTube Editing",
-                  "Short Form Content"
-                ].map((discipline, idx) => (
-                  <motion.span
-                    key={idx}
-                    variants={pillItem}
-                    className="px-3.5 py-1.5 text-xs font-light text-neutral-300 bg-neutral-900/40 border border-white/[0.05] rounded-full tracking-wide hover:border-white/10 hover:bg-neutral-900/60 transition-[border-color,background-color] duration-300 cursor-default"
-                  >
-                    {discipline}
-                  </motion.span>
-                ))}
-              </motion.div>
-            </motion.div>
-
-            {/* Section 3: COMPLEMENTARY SKILLS */}
-            <motion.div variants={staggerItem} className="flex flex-col space-y-4 w-full">
-              <span className="text-[10px] font-medium font-mono tracking-[0.3em] text-[#D4D4D4] uppercase">
-                Complementary Skills
-              </span>
-              <motion.div variants={pillContainer} className="flex flex-wrap gap-2 max-w-xl">
-                {[
-                  "Social Media Marketing",
-                  "Content Strategy",
-                  "Creative Scripting",
-                  "AI-Assisted Content Writing",
-                  "AI-Assisted Design",
-                  "AI-Assisted Video Production",
-                  "Content Creation",
-                  "Creative Research",
-                  "Creative Direction"
+                  "Creative Direction",
+                  "Creative Strategy & Campaign Ideation",
+                  "Content Direction for Brands",
+                  "Visual Storytelling",
+                  "Creative Concept Development",
+                  "Brand Positioning through Content",
+                  "Project & Client Management",
+                  "Client Communication & Stakeholder Management",
+                  "Creative Briefing & Feedback",
+                  "Project Planning & Execution",
+                  "Team Coordination & Leadership",
+                  "Quality Control & Final Approvals"
                 ].map((skill, idx) => (
                   <motion.span
                     key={idx}

@@ -254,6 +254,29 @@
   }
 }
 
+/* Continuous Logo Marquee Animation */
+@keyframes marquee-scroll {
+  0% {
+    transform: translate3d(0%, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+  animation: marquee-scroll 38s linear infinite;
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
 /* Reduced Motion overrides for Accessibility */
 @media (prefers-reduced-motion: reduce) {
   * {
