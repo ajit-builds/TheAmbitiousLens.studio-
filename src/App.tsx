@@ -12,6 +12,7 @@ import Navbar from './components/Navbar/Navbar';
 import Hero from './sections/Hero';
 import About from './sections/About';
 import VideoPortfolio from './sections/VideoPortfolio';
+import InstagramCollaborations from './sections/InstagramCollaborations';
 import WorkedWith from './sections/WorkedWith';
 import Process from './sections/Process';
 import Contact from './sections/Contact';
@@ -53,6 +54,7 @@ function App() {
               <main>
                 <Hero />
                 <VideoPortfolio />
+                <InstagramCollaborations />
                 <WorkedWith />
                 <Process />
                 <About />

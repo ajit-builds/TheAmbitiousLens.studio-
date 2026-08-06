@@ -13,6 +13,7 @@ interface NavItem {
 const NAV_ITEMS: NavItem[] = [
   { label: 'Home', href: '#hero' },
   { label: 'Work', href: '#video-portfolio' },
+  { label: 'Collabs', href: '#collaborations' },
   { label: 'Brands', href: '#worked-with' },
   { label: 'Process', href: '#process' },
   { label: 'About', href: '#about' },
