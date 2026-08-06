@@ -12,64 +12,64 @@ export const instagramCollaborations: InstagramCollaboration[] = [
     id: 'collab-1',
     name: 'Trifid Media',
     username: 'trifidmedia',
-    followers: '140K Followers',
+    followers: '1.4M Followers',
     profileImage: '/images/collaborations/trifidmedia.png',
-    instagramUrl: 'https://www.instagram.com/trifidmedia?igsh=MXdlcG1xN2s1YjRqcw=='
+    instagramUrl: 'https://www.instagram.com/trifidmedia/'
   },
   {
     id: 'collab-2',
     name: 'Kallaway Marketing',
     username: 'kallawaymarketing',
-    followers: '100K Followers',
+    followers: '68.1K Followers',
     profileImage: '/images/collaborations/kallawaymarketing.png',
-    instagramUrl: 'https://www.instagram.com/kallawaymarketing?igsh=MWdoeGNjeW5hNjE1bA=='
+    instagramUrl: 'https://www.instagram.com/kallawaymarketing/'
   },
   {
     id: 'collab-3',
     name: 'Metro Media House',
     username: 'metromedia.house',
-    followers: '85K Followers',
+    followers: '129K Followers',
     profileImage: '/images/collaborations/metromedia-house.png',
-    instagramUrl: 'https://www.instagram.com/metromedia.house?igsh=YWtuOHdyeGZxb2g1'
+    instagramUrl: 'https://www.instagram.com/metromedia.house/'
   },
   {
     id: 'collab-4',
     name: 'Steven',
     username: 'steven',
-    followers: '500K Followers',
+    followers: '5.2M Followers',
     profileImage: '/images/collaborations/steven.png',
-    instagramUrl: 'https://www.instagram.com/steven?igsh=YnNwam5oaGF5eDl2'
+    instagramUrl: 'https://www.instagram.com/steven/'
   },
   {
     id: 'collab-5',
     name: 'Starbucks India',
     username: 'starbucksindia',
-    followers: '1.2M Followers',
+    followers: '638K Followers',
     profileImage: '/images/collaborations/starbucksindia.png',
-    instagramUrl: 'https://www.instagram.com/starbucksindia?igsh=YzgzcmJjaGVlNmg5'
+    instagramUrl: 'https://www.instagram.com/starbucksindia/'
   },
   {
     id: 'collab-6',
     name: 'Tharun Naik',
     username: 'tharunnaik.0',
-    followers: '250K Followers',
+    followers: '300K Followers',
     profileImage: '/images/collaborations/tharunnaik.png',
-    instagramUrl: 'https://www.instagram.com/tharunnaik.0?igsh=MWdoNjY5MzRybmFoMw=='
+    instagramUrl: 'https://www.instagram.com/tharunnaik.0/'
   },
   {
     id: 'collab-7',
     name: 'District Culture',
     username: 'districtculture',
-    followers: '60K Followers',
+    followers: '218K Followers',
     profileImage: '/images/collaborations/districtculture.png',
-    instagramUrl: 'https://www.instagram.com/districtculture?igsh=MXMwdWVxMGdhdjk2bA=='
+    instagramUrl: 'https://www.instagram.com/districtculture/'
   },
   {
     id: 'collab-8',
     name: 'Emirates',
     username: 'emirates',
-    followers: '7.5M Followers',
+    followers: '8.9M Followers',
     profileImage: '/images/collaborations/emirates.png',
-    instagramUrl: 'https://www.instagram.com/emirates?igsh=MWc1dGVtZGltaWJrcQ=='
+    instagramUrl: 'https://www.instagram.com/emirates/'
   }
 ];

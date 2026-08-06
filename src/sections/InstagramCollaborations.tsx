@@ -17,9 +17,9 @@ export const InstagramCollaborations: React.FC = () => {
       <Container>
         {/* Section Intro Header */}
         <SectionTitle
-          eyebrow="03 // FEATURED COLLABORATIONS"
-          title="Featured Collaborations"
-          subtitle="Brands, creators, and businesses I've collaborated with across creative campaigns."
+          eyebrow="03 // TRUSTED BY"
+          title="Trusted By"
+          subtitle="Helping channels grow through creative strategy and storytelling."
           align="left"
           className="mb-12 md:mb-16"
         />

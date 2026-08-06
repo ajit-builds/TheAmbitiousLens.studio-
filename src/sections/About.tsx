@@ -188,7 +188,7 @@ export const About: React.FC = () => {
               <span className="text-[10px] font-mono tracking-[0.25em] text-neutral-500 uppercase">
                 Who I Am
               </span>
-              <h3 className="text-xl sm:text-2xl font-light tracking-wide text-neutral-200">
+              <h3 className="text-[1.35rem] sm:text-[1.65rem] font-light tracking-wide text-neutral-200">
                 Aryan Manna
               </h3>
               <div className="text-sm sm:text-base text-neutral-400 font-light leading-relaxed space-y-4 max-w-xl">

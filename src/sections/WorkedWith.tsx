@@ -18,9 +18,9 @@ export const WorkedWith: React.FC = () => {
       <Container>
         {/* Section Intro */}
         <SectionTitle
-          eyebrow="04 // TRUSTED BY"
-          title="Worked With"
-          subtitle="Collaborating with brands and creative teams to bring ideas to life."
+          eyebrow="04 // CREATIVE PARTNERSHIPS"
+          title="Creative Partnerships"
+          subtitle="Helping brands grow through strategy, storytelling, and creative execution."
           align="left"
           className="mb-8 md:mb-10"
         />
