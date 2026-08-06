@@ -42,23 +42,13 @@ export const Hero: React.FC = () => {
 
           {/* Core Roles Title */}
           <motion.h3
-            className="mt-6 text-xs sm:text-sm md:text-base font-sans font-medium tracking-[0.2em] text-platinum/95 uppercase text-center"
+            className="mt-6 text-sm sm:text-base md:text-lg font-sans font-medium tracking-[0.2em] text-platinum/95 uppercase text-center"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1.1, duration: 1.0, ease: easeCurve }}
           >
             Creative Director
           </motion.h3>
-
-          {/* Supporting Tagline */}
-          <motion.p
-            className="mt-3 text-[10px] sm:text-xs md:text-sm font-sans font-light tracking-widest text-neutral-500 text-center max-w-xl"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1.4, duration: 1.0, ease: easeCurve }}
-          >
-            Crafting Stories Through Motion & Emotion
-          </motion.p>
         </div>
 
         {/* Video Portfolio Carousel */}

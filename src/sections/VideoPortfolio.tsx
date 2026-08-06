@@ -45,7 +45,6 @@ export const VideoPortfolio: React.FC = () => {
         <SectionTitle
           eyebrow="01 // SELECTED WORK"
           title="My Works"
-          subtitle="Stories crafted through editing, rhythm and emotion."
           align="left"
           className="mb-12 md:mb-16"
         />
