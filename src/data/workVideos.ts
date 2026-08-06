@@ -3,7 +3,7 @@ export interface WorkVideo {
   title: string;
   youtubeUrl: string;
   thumbnail?: string;
-  category: "Partnership with Coca-Cola" | "Partnership with Kinder Joy" | "Partnership with Santoor" | "Partnership with Asian Paints" | "Partnership with Thing";
+  category: "Partnership with Coca-Cola" | "Partnership with Kinder Joy" | "Partnership with Santoor" | "Partnership with Asian Paints" | "Partnership with NAVI UPI";
 }
 
 export const workVideos: WorkVideo[] = [
@@ -32,7 +32,7 @@ export const workVideos: WorkVideo[] = [
     category: "Partnership with Asian Paints"
   },
   {
-    id: "work-thing",
+    id: "work-navi-upi",
     title: "Partnership with NAVI UPI",
     youtubeUrl: "https://www.youtube.com/watch?v=k9-l-fAZcgc",
     category: "Partnership with NAVI UPI"
