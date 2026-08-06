@@ -47,7 +47,7 @@ export const Hero: React.FC = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 1.1, duration: 1.0, ease: easeCurve }}
           >
-            Video Editor & Creative Director
+            Creative Director
           </motion.h3>
 
           {/* Supporting Tagline */}

@@ -16,7 +16,7 @@ export const YOUTUBE_VIDEOS = "https://www.youtube.com/@TheAmbitiousLens/videos"
 export const EMAIL = "aryanmanna029@gmail.com";
 
 // Creative studio base location
-export const LOCATION = "Mumbai";
+export const LOCATION = "Kolkata";
 
 // Freelance and project contract availability status
 export const AVAILABILITY = "Available for Selected Contracts / Remote Projects";

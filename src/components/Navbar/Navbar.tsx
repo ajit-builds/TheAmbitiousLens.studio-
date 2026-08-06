@@ -158,12 +158,12 @@ export const Navbar: React.FC = () => {
             {/* Let's Talk CTA button (Desktop) */}
             <div className="hidden md:flex items-center gap-3">
               <Button
-                variant="outline"
+                variant="primary"
                 size="sm"
                 onClick={handleCtaClick}
                 onMouseEnter={() => setCursorVariant('hover')}
                 onMouseLeave={() => setCursorVariant('default')}
-                className="font-mono tracking-widest text-[9px] uppercase h-9 px-4 border-neutral-800 hover:border-neutral-400 bg-neutral-950/40 text-neutral-300 hover:text-white"
+                className="font-mono tracking-widest text-[9px] uppercase font-medium bg-platinum text-obsidian border border-platinum hover:bg-neutral-900 hover:text-white hover:border-neutral-700 h-9 px-4 rounded-sm active:scale-[0.98] transition-all duration-300"
               >
                 Let's Talk
               </Button>
@@ -231,9 +231,9 @@ export const Navbar: React.FC = () => {
                 className="mt-4 flex flex-col gap-3 w-full max-w-[200px]"
               >
                 <Button
-                  variant="outline"
+                  variant="primary"
                   onClick={handleCtaClick}
-                  className="w-full font-mono text-xs tracking-widest uppercase py-3 border-neutral-800 hover:border-neutral-400 bg-neutral-950/40 text-neutral-300 hover:text-white"
+                  className="w-full font-mono text-xs tracking-widest uppercase font-medium bg-platinum text-obsidian border border-platinum hover:bg-neutral-900 hover:text-white hover:border-neutral-700 py-3 rounded-sm active:scale-[0.98] transition-all duration-300"
                 >
                   Let's Talk
                 </Button>

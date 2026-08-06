@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 import type { Variants } from 'motion/react';
 import Container from '../components/Container/Container';
-import { EMAIL, LOCATION, INSTAGRAM_URL } from '../data/config';
+import { EMAIL, LOCATION } from '../data/config';
 
 export const Contact: React.FC = () => {
   const GMAIL_URL = "mailto:aryanmanna029@gmail.com";
@@ -127,28 +127,11 @@ export const Contact: React.FC = () => {
                 </motion.a>
               </motion.div>
 
-
-              {/* INSTAGRAM */}
-              <motion.div variants={infoBlockItem} className="flex flex-col space-y-2">
-                <span className="font-mono text-[9px] text-neutral-500 uppercase tracking-widest">INSTAGRAM</span>
-                <motion.a 
-                  href={INSTAGRAM_URL} 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  whileHover={linkHover}
-                  transition={linkTransition}
-                  className="group relative inline-block text-sm sm:text-base text-neutral-300 cursor-pointer font-light self-start"
-                >
-                  <span>@aryanmanna</span>
-                  <span className="absolute bottom-0 left-0 w-full h-[1px] bg-neutral-200 origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out" />
-                </motion.a>
-              </motion.div>
-
               {/* LOCATION */}
               <motion.div variants={infoBlockItem} className="flex flex-col space-y-2">
                 <span className="font-mono text-[9px] text-neutral-500 uppercase tracking-widest">LOCATION</span>
                 <motion.a 
-                  href="https://maps.google.com/?q=Mumbai"
+                  href="https://maps.google.com/?q=Kolkata"
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={linkHover}
@@ -156,22 +139,6 @@ export const Contact: React.FC = () => {
                   className="group relative inline-block text-sm sm:text-base text-neutral-300 cursor-pointer font-light self-start"
                 >
                   <span>{LOCATION}, India</span>
-                  <span className="absolute bottom-0 left-0 w-full h-[1px] bg-neutral-200 origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out" />
-                </motion.a>
-              </motion.div>
-
-              {/* AVAILABILITY */}
-              <motion.div variants={infoBlockItem} className="flex flex-col space-y-2">
-                <span className="font-mono text-[9px] text-neutral-500 uppercase tracking-widest">AVAILABILITY</span>
-                <motion.a 
-                  href={GMAIL_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  whileHover={linkHover}
-                  transition={linkTransition}
-                  className="group relative inline-block text-sm sm:text-base text-neutral-300 cursor-pointer font-light self-start text-left outline-none"
-                >
-                  <span>Freelance • Remote</span>
                   <span className="absolute bottom-0 left-0 w-full h-[1px] bg-neutral-200 origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out" />
                 </motion.a>
               </motion.div>
