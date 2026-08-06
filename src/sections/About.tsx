@@ -151,7 +151,7 @@ export const About: React.FC = () => {
                 </div>
 
                 <p className="text-xs sm:text-sm text-neutral-400 font-light leading-relaxed mb-6 relative z-10">
-                  Some ideas are meant to grow quietly before the world notices them. This is one of them. A long-term vision where creativity, storytelling, motion and technology eventually converge.
+                  Every great brand has a story. I help bring it to life through strategy, storytelling, and creative direction.
                 </p>
 
                 {/* Spaced bottom labels */}

@@ -14,19 +14,18 @@ const getYoutubeId = (url: string): string => {
 };
 
 const CATEGORIES = [
-  "Normal Talking Head",
-  "Documentary Edit",
-  "Gaming",
-  "Clean Professional",
-  "Storytelling",
-  "Sound Design"
+  "Partnership with Coca-Cola",
+  "Partnership with Kinder Joy",
+  "Partnership with Santoor",
+  "Partnership with Asian Paints",
+  "Partnership with NAVI UPI"
 ] as const;
 
 // Main Tabbed Work Exhibition Component
 export const VideoPortfolio: React.FC = () => {
   const { setCursorVariant } = useCursor();
   const { activeVideoId, playVideo, pauseVideo } = useVideoPlayback();
-  const [activeCategory, setActiveCategory] = useState<typeof CATEGORIES[number]>("Normal Talking Head");
+  const [activeCategory, setActiveCategory] = useState<typeof CATEGORIES[number]>("Partnership with Coca-Cola");
 
   // Find the video details corresponding to the selected category
   const activeVideo = workVideos.find(v => v.category === activeCategory) || workVideos[0];

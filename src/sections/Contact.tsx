@@ -102,8 +102,8 @@ export const Contact: React.FC = () => {
               variants={itemFadeUp(0.9)}
               className="mt-6 text-sm sm:text-base text-neutral-400 font-light leading-relaxed max-w-xl"
             >
-              Have a project, an idea, or simply want to connect?<br className="hidden sm:inline" />
-              I'd love to hear what you're working on. Whether it's video editing, motion graphics, filmmaking, content creation, or creative strategy, let's build something meaningful together.
+              Have a project, a brand, or an idea you'd like to bring to life?<br className="hidden sm:inline" />
+              Let's connect and create work that makes an impact. From creative direction and brand strategy to visual storytelling, campaign ideation, and project leadership, I'm here to help turn ambitious ideas into meaningful results.
             </motion.p>
 
             {/* Elegant Information Blocks */}

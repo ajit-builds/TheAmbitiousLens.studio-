@@ -2,46 +2,39 @@ export interface WorkVideo {
   id: string;
   title: string;
   youtubeUrl: string;
-  thumbnail?: string; // Optional custom thumbnail URL
-  category: "Normal Talking Head" | "Gaming" | "Clean Professional" | "Documentary Edit" | "Storytelling" | "Sound Design";
+  thumbnail?: string;
+  category: "Partnership with Coca-Cola" | "Partnership with Kinder Joy" | "Partnership with Santoor" | "Partnership with Asian Paints" | "Partnership with Thing";
 }
 
 export const workVideos: WorkVideo[] = [
   {
-    id: "work-talking-head",
-    title: "talking head motion graphics",
-    youtubeUrl: "https://www.youtube.com/embed/nUb6kA8Em-Y?si=Mm8oMvvXQSBpupGn",
-    category: "Normal Talking Head"
+    id: "work-coca-cola",
+    title: "Partnership with Coca-Cola",
+    youtubeUrl: "https://www.youtube.com/watch?v=wON_BvZPSRI",
+    category: "Partnership with Coca-Cola"
   },
   {
-    id: "work-doc-edit",
-    title: "CoCa Cola Documentary Edit ",
-    youtubeUrl: "https://www.youtube.com/embed/gFS5nlV4jYg?si=OVigU-LGYigw1S3M",
-    category: "Documentary Edit"
+    id: "work-kinder-joy",
+    title: "Partnership with Kinder Joy",
+    youtubeUrl: "https://www.youtube.com/watch?v=Wg3mNx4m9UU",
+    category: "Partnership with Kinder Joy"
   },
   {
-    id: "work-gaming",
-    title: "Gaming Video Showcase",
-    youtubeUrl: "https://youtu.be/NVAd2bKn7zY",
-    
-    category: "Gaming"
+    id: "work-santoor",
+    title: "Partnership with Santoor",
+    youtubeUrl: "https://www.youtube.com/watch?v=emuojFEjjVo",
+    category: "Partnership with Santoor"
   },
   {
-    id: "work-clean-prof",
-    title: "my edit war winning video",
-    youtubeUrl: "https://www.youtube.com/embed/orUZnmqmRIY?si=Y4ZwcKzGab3I0AB5",
-    category: "Clean Professional"
+    id: "work-asian-paints",
+    title: "Partnership with Asian Paints",
+    youtubeUrl: "https://www.youtube.com/watch?v=WJkeZxgc4fw",
+    category: "Partnership with Asian Paints"
   },
   {
-    id: "work-storytelling",
-    title: "Echoes of Silence Narrative Short",
-    youtubeUrl: "https://www.youtube.com/embed/bdo_Rsr5lAQ?si=HuvovrQMIPYgNSag",
-    category: "Storytelling"
-  },
-  {
-    id: "work-sound-design",
-    title: "Sound Design",
-    youtubeUrl: "https://www.youtube.com/embed/qhhP1cf-eVc?si=KbJFDMM1cfywKVXM",
-    category: "Sound Design"
+    id: "work-thing",
+    title: "Partnership with NAVI UPI",
+    youtubeUrl: "https://www.youtube.com/watch?v=k9-l-fAZcgc",
+    category: "Partnership with NAVI UPI"
   }
 ];
